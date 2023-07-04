@@ -1,9 +1,11 @@
+// Cantidad de Vidas
 var numVidas = 5;
 
 alert ('La palabra final es ' + ' _  _  _  _  _ ')
 
 var letraCorrecta = 'C'
 
+//Contador de vidas
 function tries(){
 for (var i = numVidas; i > 0; i--) {
 
@@ -37,17 +39,21 @@ tries()
 
 alert ('CORRECTO! La palabra final es ' + 'C  O  _  _  _')
 
+// TERCERA LETRA
 //----------------------
 letraCorrecta = letraCorrecta = 'D'
 tries()
 
 alert ('CORRECTO! La palabra final es ' + 'C  O  D  _  _')
 
+// CUARTA LETRA
 //----------------------
 letraCorrecta = letraCorrecta = 'E'
 tries()
 
 alert ('CORRECTO! La palabra final es ' + 'C  O  D  E  _')
+
+// QUINTA LETRA
 //----------------------
 
 letraCorrecta = letraCorrecta = 'R'
@@ -55,6 +61,9 @@ tries()
 
 alert ('CORRECTO! La palabra final es ' + 'C  O  D  E  R')
 //----------------------
+
+
+// PARTES DEL AHORCADO 
 
 var cabeza = "  😊";
 var cabeza2 = " 😵";
@@ -65,6 +74,9 @@ var piernas = "  / \\";
 var base = "_______";
 
 
+// STATUS DE AHORCADO SEGUN VIDAS
+
+console.log('STATUS FINAL:')
 switch (numVidas) {
     case 5:
         console.log(cabeza);
