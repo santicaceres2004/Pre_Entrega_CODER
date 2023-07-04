@@ -1,4 +1,12 @@
+
+console.log('BIENVENDIO AL JUEGO DEL AHORCADO')
+console.log('Reglas:')
+console.log('Para adivinar la palabra hay que ir adivinando por LETRA y en ORDEN ')
+console.log('Las letras tienen que ser en mayuscula')
+console.log('---------------------------------------------------------------------')
+
 // Cantidad de Vidas
+
 var numVidas = 5;
 
 alert ('La palabra final es ' + ' _  _  _  _  _ ')
@@ -18,23 +26,26 @@ for (var i = numVidas; i > 0; i--) {
     } else {
     console.log (' Correcto era la letra ' + letraCorrecta)
     break
-    }
+        }
 
+    }
 }
 
+function perdido(){
   // Restar una vida
 if (numVidas === 0) {
     console.log('Te haz quedado sin vidas')
     }
 }
 
-tries()
-
+if (tries()) {
 alert ('CORRECTO! La palabra final es ' + 'C  _  _  _  _')
-
+} else {
+    alert ('Ingrese otra letra')
+}
 // SEGUNDA LETRA
 //----------------------
-letraCorrecta = letraCorrecta = 'O'
+letraCorrecta = letraCorrecta = 'O' || 'o'
 tries()
 
 alert ('CORRECTO! La palabra final es ' + 'C  O  _  _  _')
@@ -62,6 +73,7 @@ tries()
 alert ('CORRECTO! La palabra final es ' + 'C  O  D  E  R')
 //----------------------
 
+perdido()
 
 // PARTES DEL AHORCADO 
 
@@ -111,3 +123,4 @@ switch (numVidas) {
         console.log(base)       
         break;
     }
+
